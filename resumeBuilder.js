@@ -82,8 +82,8 @@ var education = {
 };
 function displayeducation() {
 	//var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools.name);
-	/*if (education.schools.length > 0) {
-    $("#education").append(HTMLschoolStart);
+	//if (education.schools.length > 0) {
+    /*$("#education").append(HTMLschoolStart);
     education.schools.forEach(function(school){
         $("#education").append(HTMLschoolStart);
     });};
@@ -132,7 +132,7 @@ function displayeducation() {
 displayeducation();
 
 
-/*var work = {
+var work = {
 	"jobs": [
 	{
 		"employer": "Infosys", 
@@ -170,7 +170,26 @@ var projects = {
 		"title":"Animal Trading Cards",
 		"dates": 2016,
 		"description":"An Asian Elephant card comprising the datas of the animal",
-		"images": [
-		] 
+		"images": [""] 
 	}]
-};*/
+};
+
+/*function displayprojects() {
+	if (projects.projects.length > 0) {		
+
+		for (var i = 0; i < projects.projects.length; i++) {
+		
+			$("#projects").append(HTMLprojectStart);	
+			var formattedprojectTitle = .replace("%data%", projects.projects[i].title);
+			var formattedprojectDates = .replace("%data%", projects.projects[i].dates);
+			var formattedprojectDescription = .replace("%data%", projects.projects[i].description);
+			var formattedImage = .replace("%data%", projects.projects[i].images);
+			
+			$(".project-entry").append(formattedprojectTitle);
+			$(".project-entry").append(formattedprojectDates);
+			$(".project-entry").append(formattedprojectDescription);
+			$(".project-entry").append(formattedImage);
+		}
+	}
+};
+displayprojects();*/
