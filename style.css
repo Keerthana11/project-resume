@@ -3,7 +3,6 @@ div,
 ul,
 li,
 p,
-h1,
 h2,
 h3,
 h4,
@@ -21,12 +20,15 @@ h6 {
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+  padding: 0.5%;
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
+  padding:0;
+  margin:0;
+  font-family: 'Slabo 27px', serif;
+  font-size: 50px;
+  color: #7f5417;
   line-height: 48px;
   display: inline;
 }
@@ -34,15 +36,17 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #7f5417;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
+  padding: 0;
+  margin: 0;
   font-style: italic;
   font-size: 20px;
-  color: #000;
+  color: #b6212d;
   line-height: 22px;
 }
 
@@ -61,6 +65,12 @@ h5 {
 
 }
 
+#role {
+  padding:0;
+  margin:0;
+  font-family: 'Orbitron', sans-serif;
+  color: #b6212d;
+}
 
 .date-text {
   font-style: italic;
@@ -76,13 +86,13 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
   font-size: 14px;
   color: #333;
   line-height: 21px;
+
 }
 
 a {
@@ -93,43 +103,59 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
+  font-family: 'Boogaloo', cursive;
+  font-size: 25px;
+  color: #7f5417;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  padding:0;
+  margin:0;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  font-style: normal;
+  color: #b6212d;
   display: none;
 }
 
+#projects, #mapDiv {
+  background-color: #fbf9ea;
+}
+
+#skills {
+  position: absolute;
+  left: 25%;
+  top: 28%;
+}
+
 .orange {
-  background-color: #f5ae23;
+  background-color: #ffe6cc;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #4d2600;
 }
 
 .white-text {
-  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #fff;
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: #ffe6cc;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background: url("../images/brown.jpg") repeat 0 0;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background: url("../images/brown.jpg") repeat 0 0;
 }
 
 .flex-box {
@@ -157,6 +183,7 @@ ul {
 }
 
 .biopic {
+  border-radius: 50%;
   float: left;
   padding: 10px;
   width: 200px;
